@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+    android:orientation="vertical"  
+  >  
+ <LinearLayout   
+     android:gravity="center_horizontal"  
+     android:id="@+id/pop"
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"  >
+    <Button
+         android:id="@+id/b_bt_selbirth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+       android:background="@drawable/radio_button"
+        />
+    <LinearLayout 
+        android:background="@drawable/radio_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+    <DatePicker
+        android:id="@+id/birth_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        style="@android:style/Widget.DatePicker"  
+        />
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

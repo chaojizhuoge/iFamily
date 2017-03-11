@@ -1,0 +1,98 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+ <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+ <style name="moment_big_dot">
+        <item name="android:paddingLeft">7.0px</item>
+        <item name="android:paddingTop">6.0px</item>
+        <item name="android:paddingRight">7.0px</item>
+        <item name="android:paddingBottom">8.0px</item>
+    </style><style name="moment_small_dot">
+        <item name="android:paddingLeft">6.0px</item>
+        <item name="android:paddingTop">5.0px</item>
+        <item name="android:paddingRight">6.0px</item>
+        <item name="android:paddingBottom">7.0px</item>
+    </style><style name="moment_people_photo">
+        <item name="android:layout_width">37.0px</item>
+        <item name="android:layout_height">37.0px</item>
+        <item name="android:layout_marginLeft">7.0px</item>
+        <item name="android:layout_marginTop">6.0px</item>
+    </style>
+    <style name="author_name">
+        <item name="android:textColor">@color/path_black</item>
+        <item name="android:textSize">11.0dip</item>
+    </style>
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="base_text">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="feed_text" parent="@style/base_text">
+        <item name="android:textColor">@color/path_black</item>
+    </style>
+    <style name="feed_subtext_on_white" parent="@style/base_text">
+        <item name="android:textColor">@color/med_gray</item>
+    </style>
+         
+    	<style name="AnimBottom" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+ </style>
+ 
+    <style name="MyAppTheme" parent="android:Theme.Light">
+        <item name="android:textColor">#ffffffff</item>
+          <item name="android:windowNoTitle">true</item>
+    </style><style name="chat_date_style">
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:background">#BEBDBE</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style><style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">false</item>
+ <!-- 模糊 -->
+        <item name="android:windowIsTranslucent">false</item>
+ <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+ <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+ <!-- 背景透明 -->
+
+    </style>
+    
+    <style name="popupfrombottom" parent="android:Animation">
+     <item name="android:windowEnterAnimation">@anim/frombottom_in</item>
+     <item name="android:windowExitAnimation">@anim/frombottom_out</item>
+     </style>
+</resources>

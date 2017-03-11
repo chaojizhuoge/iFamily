@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="70dp"
+  android:id="@+id/all"
+  android:orientation="horizontal"
+android:background="@drawable/halftrancornerview"
+  >
+
+<com.example.ifamily.mywidget.RoundImageView
+    android:id="@+id/sys"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:src="@drawable/icon" />
+
+<RelativeLayout 
+ android:layout_width="fill_parent"
+ android:layout_height="70dp"
+ android:gravity="center"
+    >       
+   <TextView 
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="系统通知"
+       
+       android:singleLine="true"
+       android:textSize="25sp"
+       android:ellipsize="end"
+       android:maxLength="10"
+       android:textColor="@color/purple"
+       /> 
+</RelativeLayout>
+  </LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ifamily"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name="com.example.ifamily.PushApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.example.ifamily.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Viewpager"></activity>
+        <activity android:name=".activity.Login"></activity>
+        <activity android:name=".activity.Reg"></activity>
+        <activity android:name=".activity.RegisterConfirmActivity"></activity>
+        <activity android:name=".activity.PasswordFActivity"></activity>
+        <activity android:name=".activity.Regover"></activity>
+        <activity android:name=".activity.Iguide"></activity>
+        <activity android:name=".activity.ChattingActivity"></activity>
+        <activity android:name=".activity.FamilyzoneActivity"></activity>
+        <activity android:name=".activity.Entergroup"></activity>
+        <activity android:name=".activity.Privatemessage"></activity>
+        <activity android:name=".activity.Quitgroup"></activity>
+        <activity android:name=".activity.Recommend"></activity>
+        <activity android:name=".activity.Setgroup"></activity>
+        <activity android:name=".activity.Telladvice"></activity>
+        <activity android:name=".activity.Usehelp"></activity>
+        <activity android:name=".activity.EnterGroupAddF"></activity>
+        <activity android:name=".activity.AddPicActivity"></activity>
+        <activity android:name=".activity.AddTextActivity"></activity>
+        
+        <receiver android:name="com.example.ifamily.client.PushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind、setTags等method的返回结果 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 可选。接受通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" 
+            android:permission="android.permission.WRITE_EXTERNAL_STORAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" 
+            android:permission="android.permission.WRITE_EXTERNAL_STORAGE">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" 
+            android:permission="android.permission.WRITE_EXTERNAL_STORAGE">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push结束 -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="nBk08l3TWMuGUu0fA1kU7H75" />
+        <activity android:name=".activity.ChatChatActivity"></activity>
+        <activity android:name=".activity.ChatListActivity"></activity>
+        <activity android:name=".activity.AddschActiivity"></activity>
+        <activity android:name=".activity.ZoneCommentActivity"></activity><activity android:name=".activity.PrivateMeModify"></activity>
+        
+        <activity android:name=".activity.PrivateNameModify"></activity>
+        <activity android:name=".activity.OldObjectMain"></activity>
+        <activity android:name=".activity.OldAddActivity"></activity>
+        <activity android:name=".activity.OldObjectCommentActivity"></activity>
+        <activity android:name=".activity.HolesMain"></activity>
+        <activity android:name=".activity.AtMeActivity"></activity>
+        <activity android:name=".activity.DayAdd">
+        </activity>
+        <activity android:name=".activity.DayMain"></activity>
+        <activity android:name=".activity.HolesAddTc"></activity>
+        <activity android:name=".activity.DayMakingActivity">
+        </activity>
+        <activity android:name=".activity.DayDiyviewActivity"></activity>
+        <activity android:name=".activity.HolesAddWish"></activity>
+        <activity android:name=".activity.AskHelpActivity">
+        </activity>
+        <activity android:name=".activity.AskHelpAdd"></activity>
+        <activity android:name=".activity.WishCommentActivity"></activity>
+        <activity android:name=".activity.TcCommentActivity"></activity>
+        <activity android:name=".activity.SysMsActivity"></activity>
+        <activity android:name=".activity.MyPicActivity"></activity>
+        <activity android:name=".activity.RegServer"></activity>
+        <activity android:name=".activity.GroupmessageActivity"></activity>
+        <activity android:name=".activity.StorycommentActivity"></activity>
+    </application>
+
+</manifest>

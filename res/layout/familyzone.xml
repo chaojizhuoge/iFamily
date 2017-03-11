@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/feed_item_bg" >
+
+ <include layout="@layout/familyzone_top"
+         android:id="@+id/top"
+      />
+ <ScrollView
+     android:layout_height="fill_parent"
+     android:layout_width="fill_parent"
+     android:layout_below="@id/top"
+     android:scrollbars="none"
+     android:fillViewport="true"
+      >
+      <LinearLayout 
+          android:orientation="vertical"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          >
+ <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="62dp"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    android:id="@+id/fz_gv"
+ >
+<HorizontalScrollView  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:scrollbars="none">  
+        <LinearLayout   
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"   
+            android:orientation="horizontal">  
+            <GridView android:id="@+id/gd_head"  
+                android:layout_width="wrap_content"  
+                android:layout_height="60dp"  
+                android:layout_gravity="center"
+                android:columnWidth="60dp"
+                android:horizontalSpacing="10dp" 
+                android:stretchMode="none" 
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"
+                android:verticalSpacing="10dp"/>  
+        </LinearLayout>  
+</HorizontalScrollView>  
+ </RelativeLayout>
+  <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+ 
+         >
+
+        <ImageView
+            android:id="@+id/timeline_track"
+            android:layout_width="4dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dip"
+            android:layout_marginLeft="72.0dip"
+            android:background="@color/red"
+            android:scaleType="fitXY"
+            android:src="@drawable/feed_item_track" />
+
+        <com.example.ifamily.mywidget.AutoListView
+            android:id="@+id/zonelist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="vertical"
+            />
+
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

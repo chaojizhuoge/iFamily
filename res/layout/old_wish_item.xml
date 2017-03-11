@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/all"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/allitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/halftrancornerview"
+        >
+        
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/o_old_item_ll"  
+            android:layout_below="@id/ltime" 
+            android:gravity="center_vertical"         
+        >
+
+<com.example.ifamily.mywidget.RoundImageView
+    android:id="@+id/head"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/defalt_head" />
+<RelativeLayout
+    android:id="@+id/re_text"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_toRightOf="@id/head"
+    >
+            <RelativeLayout
+        android:id="@+id/rrr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+            <com.example.ifamily.mywidget.TextViewM
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text="ddddddddddddddddddddddddddddddddddddd"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/addtext"
+                android:layout_toRightOf="@id/name"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple"
+                android:gravity="right"
+                android:text="2008 7/29 " />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below="@id/rrr"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text="ddddddddddddddddddddddddddddddddddddd"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+                    
+                </RelativeLayout>    
+  </RelativeLayout>
+        
+        
+        
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/p_title"
+        android:id="@+id/top"
+         />
+   <RelativeLayout 
+       android:layout_height="fill_parent"
+       android:layout_width="fill_parent"
+       >
+      <com.example.ifamily.mywidget.PullToRefreshView
+     android:id="@+id/test_Grid"
+    android:background="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"> 
+    <ListView
+android:id = "@+id/lv_chat_grouplist"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/bg"
+android:cacheColorHint="#00000000"
+android:divider="@null"
+android:listSelector="@android:color/transparent" 
+android:drawSelectorOnTop = "false"/>
+    </com.example.ifamily.mywidget.PullToRefreshView>
+    <RelativeLayout
+    android:id="@+id/reee"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="29dp" >
+<ImageView
+    android:layout_centerInParent="true"
+    android:id="@+id/tishi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tishi21" />
+
+<TextView
+    android:id="@+id/iknow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_marginLeft="140dp"
+    android:layout_alignBottom="@id/tishi"
+    android:background="@drawable/tranbutton"
+    android:padding="3dp"
+    android:layout_marginBottom="30dp"
+    android:textColor="@color/purple"
+    android:text="我知道了" />
+
+</RelativeLayout>
+    </RelativeLayout>  
+</LinearLayout>

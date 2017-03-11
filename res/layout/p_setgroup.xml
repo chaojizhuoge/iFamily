@@ -1,0 +1,91 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+     <include
+     layout="@layout/p_title" />
+     <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+               >  
+    
+         <com.example.ifamily.mywidget.RoundImageView
+           android:id="@+id/iv_grouppic"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/defalt_head"
+           />   
+
+    <Button
+    android:id="@+id/bt_selectgrouppic"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="50dp"
+    android:layout_height="40dp" 
+    android:layout_width="120dp"
+    android:text="请选择家庭头像"
+    android:background="@drawable/commenbutton"
+    android:textColor="@color/purple"
+    />     
+
+</LinearLayout>
+<LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView android:layout_width="wrap_content" android:contentDescription="@string/app_name" android:layout_height="wrap_content" android:layout_gravity="center" android:text="家庭名" android:layout_marginLeft="16dp" android:textColor="#000000" android:textSize="19sp"/>
+                <EditText android:id="@+id/et_groupname" 
+                    android:inputType="text" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="fill_parent" 
+                    android:layout_gravity="center" 
+                    android:background="@null" 
+                    android:hint="请输入家庭名称" 
+                    android:layout_marginLeft="22dp"/>
+            </LinearLayout>
+<LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/input"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView android:layout_width="wrap_content" 
+                    android:contentDescription="@string/app_name" 
+                    android:layout_height="wrap_content" 
+                    android:layout_gravity="top" 
+                    android:text="简介" 
+                    android:layout_marginLeft="16dp" 
+                    android:textColor="#000000" 
+                    android:textSize="19sp"/>
+                <EditText android:id="@+id/et_groupinfo" 
+                    android:inputType="text" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="fill_parent" 
+                    android:gravity="top" 
+                    android:background="@null" 
+                    android:hint="请输入简介" 
+                    android:layout_marginLeft="22dp"/>
+            </LinearLayout>
+             <Button
+    android:id="@+id/bt_setgroup"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="50dp"
+    android:layout_height="40dp" 
+    android:layout_width="80dp"
+    android:text="确认"
+        android:background="@drawable/commenbutton"
+    android:textColor="@color/purple"
+    />    
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/all"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >    
+<include layout="@layout/p_title"/>
+<LinearLayout
+      android:id="@+id/selectfamily"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/cornerview"
+         android:orientation="horizontal"
+        >
+        
+<TextView 
+    android:id="@+id/a_add_sch_selfriend"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:textSize="15sp"
+    android:textColor="#000000"
+    android:text="请选择要将贺卡赠予的好友"
+    />
+</LinearLayout>
+<TextView
+            android:id="@+id/ok"
+            android:layout_gravity="right"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="开始DIY贺卡"
+            android:background="@drawable/commenbutton"
+            android:textColor="@color/purple"
+            />
+</LinearLayout>

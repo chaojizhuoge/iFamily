@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"   >
+  <LinearLayout 
+     android:id="@+id/select"
+     android:layout_width="fill_parent"
+     android:layout_height="40dp"
+     android:orientation="horizontal"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+
+      >
+      <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" 
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioButton
+     android:id="@+id/addtext"
+     android:layout_height="fill_parent"
+     android:layout_width="wrap_content"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:checked="true"
+     android:layout_marginLeft="10dp"
+     android:text="最新"
+     android:button="@null"
+     android:background="@drawable/radiobutton"  
+            />
+          <RadioButton
+      android:id="@+id/mine"
+      android:gravity="center"
+     android:layout_height="fill_parent"
+     android:layout_width="wrap_content"
+     android:layout_weight="1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:text="我的"
+     android:background="@drawable/radiobutton"  
+     android:button="@null"
+            />
+    </RadioGroup>
+     </LinearLayout>  
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:id="@+id/all"
+    android:orientation="vertical" >
+
+ <include
+     android:layout_height="wrap_content"
+     layout="@layout/p_title" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"  >
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+         android:orientation="vertical"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:id="@+id/p_quit_groups"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/sel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="2"
+                android:background="@drawable/cornerview"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="请选择要退出的家庭"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout> 
+
+<Button
+    android:id="@+id/bt_quit"
+    android:layout_height="40dp"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_weight="1"
+    android:text="确定"
+        android:background="@drawable/commenbutton"
+    android:textColor="@color/purple"
+    >
+</Button>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

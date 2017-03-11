@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/all"
+    android:background="@drawable/bg"
+    >
+    <com.example.ifamily.mywidget.PullToRefreshView
+     android:id="@+id/test_Grid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"> 
+    <ListView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/h_lv"
+        android:listSelector="@android:color/transparent"
+        android:layoutAnimation="@anim/navagation_gridview_anim"  
+        android:drawSelectorOnTop = "false"
+        android:divider="@null"
+        android:scrollbars="none" 
+        /> 
+    </com.example.ifamily.mywidget.PullToRefreshView>  
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/all"
+    android:layout_height="match_parent"
+       android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <com.example.ifamily.mywidget.PullToRefreshView
+     android:id="@+id/test_Grid2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"> 
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="@null"
+    android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <com.example.ifamily.mywidget.Mylistview
+android:id = "@+id/d_day_day"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:listSelector="#00000000" 
+android:divider="@null"
+android:scrollbars="none"
+android:layoutAnimation="@anim/navagation_gridview_anim"  
+android:drawSelectorOnTop = "false"/>
+    </LinearLayout>
+    </ScrollView>
+    </com.example.ifamily.mywidget.PullToRefreshView>
+</LinearLayout>

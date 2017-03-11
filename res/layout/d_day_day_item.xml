@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/all"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/allitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:background="@drawable/halftrancornerview"
+        >
+
+        <LinearLayout
+            android:id="@+id/o_old_item_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:gravity="top"
+         >
+            <LinearLayout
+            android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/ll">
+
+                <LinearLayout 
+             android:layout_height="fill_parent"
+              android:layout_width="wrap_content"
+             android:layout_weight="0.5"
+             android:gravity="center"
+                    >
+                <com.example.ifamily.mywidget.TextViewM
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="left"                  
+                    android:singleLine="true"
+                    android:text="dfdfdfdd"
+                    android:textSize="15sp" />
+</LinearLayout>
+                <LinearLayout 
+            android:layout_height="fill_parent"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:layout_weight="1"
+                    >
+                <TextView
+                    android:id="@+id/time"
+                  
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2008 5/7生日"
+                 
+                 android:textColor="@color/purple"
+                    android:textSize="15sp" />
+</LinearLayout>
+                <LinearLayout 
+             android:layout_height="fill_parent"
+              android:layout_width="wrap_content"
+             android:gravity="center"
+             android:layout_weight="0.5"
+                    >
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/tranbutton"
+            android:gravity="center"
+           android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="@color/purple"
+            android:text="赠送贺卡" />
+        </LinearLayout>
+    
+      </LinearLayout>
+
+  </LinearLayout>
+        
+    </RelativeLayout>
+</LinearLayout>

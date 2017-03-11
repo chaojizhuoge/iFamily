@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+     android:layout_height="wrap_content"
+     layout="@layout/p_title" />
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout
+          android:orientation="horizontal"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:id = "@+id/MessageBox"
+	      android:layout_alignParentBottom = "true"
+      >
+      <EditText
+      		android:layout_width = "200dip"
+      		android:layout_height = "50dip"
+      		android:hint="请输入聊天内容"
+      		android:textSize="18sp"
+      		android:background="@drawable/editboder"
+      		android:id = "@+id/ChattingText"
+      />
+      <Button
+      		android:layout_width = "wrap_content"
+      		android:layout_height = "50dip"
+      		android:layout_alignParentRight ="true"
+      		android:text ="发送"
+      		android:textSize="18sp"
+      		android:layout_toRightOf="@id/ChattingText"
+      		android:id = "@+id/ChattingButton"
+      />
+      </RelativeLayout>
+
+ <ListView
+     android:id="@+id/Chattinglist"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:cacheColorHint="#00000000"
+     android:divider="@null"
+     android:scrollbars="vertical"
+     android:layout_above="@id/MessageBox"
+     android:transcriptMode="alwaysScroll" >
+ </ListView>
+    
+</RelativeLayout>
+
+</LinearLayout>

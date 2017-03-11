@@ -1,0 +1,79 @@
+ <RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+ <include layout="@layout/familyzone_top"
+         android:id="@+id/top"
+      />
+
+    <LinearLayout 
+        android:layout_below="@id/top"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >  
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+        <ImageView
+            android:id="@+id/timeline_track"
+            android:layout_width="4dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dip"
+            android:layout_marginLeft="80.0dip"
+            android:background="@color/red"
+            android:scaleType="fitXY"
+            android:src="@drawable/feed_item_track" />
+ <com.example.ifamily.mywidget.PullToRefreshView
+     android:id="@+id/test_Grid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"> 
+        <ListView            
+            android:id="@+id/zonelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"          
+            android:scrollbars="none"
+            />
+</com.example.ifamily.mywidget.PullToRefreshView>
+</RelativeLayout>
+</LinearLayout>
+
+
+<RelativeLayout
+    android:id="@+id/reee"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="29dp" >
+<ImageView
+    android:id="@+id/tishi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/tishi" />
+
+<TextView
+    android:id="@+id/iknow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tishi"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="42dp"
+    android:background="@drawable/tranbutton"
+    android:padding="3dp"
+    android:layout_marginBottom="3dp"
+    android:textColor="@color/purple"
+    android:text="我知道了" />
+
+</RelativeLayout>
+</RelativeLayout >

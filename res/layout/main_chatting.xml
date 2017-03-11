@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/all"
+    android:layout_height="match_parent"
+            android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    
+<include layout="@layout/chatting_top"
+          android:id="@+id/ttt"
+    />
+ 
+
+
+    <RelativeLayout
+        android:id="@+id/ly_chat_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/editboder" >
+
+        <Button
+            android:id="@+id/id_chat_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/commenbutton"
+            android:onClick="sendMessage"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/id_chat_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/id_chat_send"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="true"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/id_chat_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ly_chat_bottom"
+        android:layout_below="@id/ttt"
+        android:cacheColorHint="#0000"
+        android:background="@drawable/bg"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+    
+    <RelativeLayout
+    android:id="@+id/reee"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="50dp" >
+
+
+
+<ImageView
+    android:id="@+id/tishi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/tishi11" />
+<TextView
+    android:id="@+id/iknow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tishi"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="42dp"
+    android:background="@drawable/tranbutton"
+    android:padding="3dp"
+    android:layout_marginBottom="3dp"
+    android:textColor="@color/purple"
+    android:text="我知道了" />
+</RelativeLayout>
+    
+    
+</RelativeLayout>

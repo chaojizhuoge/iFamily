@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:id="@+id/p_pri_ll"
+    android:orientation="vertical" >
+     <include
+     
+     layout="@layout/p_title" />
+     <LinearLayout
+         android:orientation="vertical"
+         android:id="@+id/background"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         >
+     <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+               >  
+    
+         <com.example.ifamily.mywidget.RoundImageView
+           android:id="@+id/iv_pri_img"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/defalt_head"
+           />     
+
+</LinearLayout>
+<LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/common_strip_setting_top"
+         android:clickable="true"
+         android:focusable="true"
+         android:gravity="center_vertical" >
+
+         <TextView
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:text="账号" />
+
+         <TextView
+             android:id="@+id/tv_p_account"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:gravity="center_vertical"
+             android:text="账号"
+             android:textColor="#000000" />
+
+         <TextView
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:drawableRight="@drawable/arrow_right_gray_white"
+             android:gravity="center_vertical"
+             android:paddingRight="8dp" />
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/li_p_name"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/common_strip_setting_top"
+         android:clickable="true"
+         android:focusable="true"
+         android:gravity="center_vertical" >
+
+         <TextView
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:text="昵称" />
+
+         <TextView
+             android:id="@+id/tv_p_name"
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:gravity="center_vertical"
+             android:text="昵称"
+             android:textColor="#000000" />
+
+         <TextView
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:drawableRight="@drawable/arrow_right_gray_white"
+             android:gravity="center_vertical"
+             android:paddingRight="8dp" />
+     </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/re_pri_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/common_strip_setting_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView                                  
+                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"           
+                        android:text="性别"                     
+                        />
+                    <TextView   
+                         android:id="@+id/tv_p_sex"                   
+                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="性别" />
+
+                    <TextView            
+                        android:layout_weight="3"     
+                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/arrow_right_gray_white"
+                        android:paddingRight="8dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/re_birth"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/common_strip_setting_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView    
+                                                 
+                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"           
+                        android:text="生日"                     
+                        />
+                    <TextView    
+                         android:id="@+id/tv_p_birth"                       
+                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="生日" />
+
+                    <TextView            
+                        android:layout_weight="3"     
+                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/arrow_right_gray_white"
+                        android:paddingRight="8dp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/re_pri_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_strip_setting_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        
+                        android:layout_width="40dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="个人简介" />
+
+                    <TextView
+                        android:id="@+id/tv_p_deteil"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textColor="#000000" />
+
+                    <TextView            
+                        android:layout_weight="3"     
+                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/arrow_right_gray_white"
+                        android:paddingRight="8dp" />
+                </LinearLayout>    
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    
+                    android:gravity="bottom"
+                    >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:id="@+id/bottom_tv" 
+                        />
+                    </LinearLayout>
+                    </LinearLayout>
+</LinearLayout>

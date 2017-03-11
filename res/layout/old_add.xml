@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/all"
+    android:orientation="vertical" >
+    <include layout="@layout/p_title"/>
+      
+   <!-- yuanwang -->     
+      
+  <!-- songliwu -->   
+   <LinearLayout 
+            android:id="@+id/present"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+       >
+       
+       <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+               >  
+    
+         <ImageView
+           android:id="@+id/pic"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/defalt_head"
+           />   
+
+    <Button
+    android:id="@+id/selectpic"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="50dp"
+    android:layout_height="40dp" 
+    android:layout_width="120dp"
+    android:text="请选择照片"
+    android:textColor="@color/purple"
+    android:background="@drawable/commenbutton"
+
+    />     
+
+</LinearLayout>
+       
+       <EditText
+           android:padding="10dp"
+    android:id="@+id/detail"
+    android:layout_marginTop="10dip"
+    android:layout_width = "fill_parent"
+    android:layout_height = "100dip"
+    android:layout_marginLeft = "10dip"
+    android:layout_marginRight = "10dip"
+    android:hint="添加描述"
+    android:background="@drawable/cornerview"
+    android:gravity="top"
+    android:textSize="18sp"
+    android:maxLength="200"
+    >
+    
+</EditText>
+       
+ <LinearLayout
+      android:id="@+id/selectfamily"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/cornerview"
+         android:orientation="horizontal"
+        >
+        
+<TextView 
+    android:id="@+id/a_add_sch_selfriend"
+    android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:textSize="15sp"
+    android:textColor="#000000"
+    android:text="请选择要发布到哪些family中"
+    />
+</LinearLayout>      
+       
+      <LinearLayout
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+         android:orientation="horizontal"
+      
+        >  
+     <Button
+   android:id="@+id/present_ok"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:layout_marginTop="20dp"
+   android:layout_marginRight="20dp"
+   android:layout_gravity="right"
+   android:gravity="center"
+   android:text="发表"
+   android:padding="10dp"
+   android:textColor="@color/purple"
+   android:background="@drawable/commenbutton"
+    />  
+       
+   </LinearLayout>    
+       
+       
+   </LinearLayout>  
+     
+     
+     
+     
+   
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+     >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    >
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip" />
+
+   <RelativeLayout
+        android:id="@+id/oment_timeline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/oment_bigdot"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="14.0dip"
+            android:src="@drawable/aixin" />
+
+
+        <include layout="@layout/familyzone_item_sch_rig"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
